@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Shri Rana Marble Handicrafts</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding-top: 130px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .media-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px 0 80px 0;
+        }
+        .media-item {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #050505;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .media-item video, .media-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .media-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="page-gallery">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Shri Rana Marble<br><span>& Handicrafts</span></h1>
+                </a>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions" style="align-items: center; display: flex;">
+                <div class="pro-widget-nav" style="display: flex; align-items: center; gap: 12px; margin-right: 15px;">
+                    <img src="images/owner_profile.jpg" alt="Om Prakash" class="owner-img" style="width: 45px; height: 45px; border: 2px solid var(--primary-color); border-radius: 50%; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;">
+                    <div class="pro-text" style="display: flex; flex-direction: column;">
+                        <span class="pro-title" style="font-size: 14px; font-weight: 600; color: #fff; font-family: 'Cinzel', serif; line-height: 1;">Om Prakash</span>
+                        <span class="pro-desc" style="font-size: 11px; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">Founder</span>
+                    </div>
+                </div>
+                <button class="action-btn menu-toggle" aria-label="Menu">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 style="font-family: 'Cinzel', serif; font-size: 40px; color: var(--primary-color);">Gallery</h1>
+            </div>
+        </section>
+
+        <!-- Minimal Media Gallery -->
+        <section>
+            <div class="container">
+                <div class="media-gallery">
+                    <!-- Videos -->
+                    <div class="media-item">
+                        <video controls playsinline preload="metadata">
+                            <source src="images/work_vid_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <video controls playsinline preload="metadata">
+                            <source src="images/work_vid_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <video controls playsinline preload="metadata">
+                            <source src="images/work_vid_3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <video controls playsinline preload="metadata">
+                            <source src="images/work_vid_4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- Photos -->
+                    <div class="media-item">
+                        <img src="images/work_img_1.jpeg" alt="Gallery Image 1" loading="lazy">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/work_img_2.jpeg" alt="Gallery Image 2" loading="lazy">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/work_img_3.jpeg" alt="Gallery Image 3" loading="lazy">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/work_img_4.jpeg" alt="Gallery Image 4" loading="lazy">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/work_img_5.jpeg" alt="Gallery Image 5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <h1>Shri Rana Marble<br><span>& Handicrafts</span></h1>
+                </div>
+                <p class="footer-desc">Crafting monumental elegance and timeless luxury. We bring the finest Makrana and Vietnam marble masterpieces from our workshop directly to your projects.</p>
+                
+                <div class="pro-widget-nav" style="display: flex; align-items: center; gap: 12px; margin-top: 25px;">
+                    <img src="images/owner_profile.jpg" alt="Om Prakash" class="owner-img" style="width: 45px; height: 45px; border: 2px solid var(--primary-color); border-radius: 50%; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;">
+                    <div class="pro-text" style="display: flex; flex-direction: column;">
+                        <span class="pro-title" style="font-size: 14px; font-weight: 600; color: #fff; font-family: 'Cinzel', serif; line-height: 1;">Om Prakash</span>
+                        <span class="pro-desc" style="font-size: 11px; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">Founder</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="ri-map-pin-2-fill"></i> Shri Rana Marble and Handicrafts, near Head Post Office, Manglana Road, Makrana (341505) Rajasthan</li>
+                    <li><i class="ri-phone-fill"></i> +91 94141 16315</li>
+                    <li><i class="ri-mail-fill"></i> shriranamarblehandicraft@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-business-hours">
+                <h4>Business Hours</h4>
+                <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Shri Rana Marble Handicrafts. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=2"></script>
+</body>
+</html>

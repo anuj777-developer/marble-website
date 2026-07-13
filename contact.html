@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shri Shri Rana Marble Handicrafts Handicrafts</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1>Shri Rana Marble<br><span>& Handicrafts</span></h1>
+                </a>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <div class="nav-actions" style="align-items: center; display: flex;">
+                <div class="pro-widget-nav" style="display: flex; align-items: center; gap: 12px; margin-right: 15px;">
+                    <img src="images/owner_profile.jpg" alt="Om Prakash" class="owner-img" style="width: 45px; height: 45px; border: 2px solid var(--primary-color); border-radius: 50%; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;">
+                    <div class="pro-text" style="display: flex; flex-direction: column;">
+                        <span class="pro-title" style="font-size: 14px; font-weight: 600; color: #fff; font-family: 'Cinzel', serif; line-height: 1;">Om Prakash</span>
+                        <span class="pro-desc" style="font-size: 11px; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">Founder</span>
+                    </div>
+                </div>
+                <button class="action-btn menu-toggle" aria-label="Menu">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact-hero" style="padding-top: 120px; padding-bottom: 50px;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3 class="section-subtitle">Get in Touch</h3>
+                    <h2 class="section-title">Contact Our Master Artisans</h2>
+                    <p class="section-desc">Whether you want to commission a custom masterpiece or have inquiries about our existing collections, our experts are here to assist you.</p>
+                </div>
+
+                                <div class="contact-grid">
+                    <div class="contact-info-container">
+                        <div class="contact-info-card">
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ri-map-pin-2-fill"></i></div>
+                                <div>
+                                    <h4>Visit Our Workshop</h4>
+                                    <p>Shri Rana Marble and Handicrafts<br>near Head Post Office, Manglana Road, Makrana (341505) Rajasthan</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ri-phone-fill"></i></div>
+                                <div>
+                                    <h4>Call Us Directly</h4>
+                                    <p>+91 94141 16315<br>+91 80055 70078</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ri-mail-send-fill"></i></div>
+                                <div>
+                                    <h4>Send an Email</h4>
+                                    <p>shriranamarblehandicraft@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ri-time-fill"></i></div>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Saturday<br>9:00 AM - 6:00 PM (IST)</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Map Placeholder -->
+                            <div class="map-container" style="margin-top: 20px; flex-grow: 1;">
+                                <iframe src="https://maps.google.com/maps?q=Shri%20Rana%20Marble%20and%20Handicrafts%2C%20near%20Head%20Post%20Office%2C%20Manglana%20Road%2C%20Makrana&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" action="mailto:shriranamarblehandicraft@gmail.com" method="POST" enctype="text/plain">
+                            <h3 class="form-heading">Send Us a Message</h3>
+                            <div class="form-row">
+                                <div class="form-group-dark">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group-dark">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group-dark">
+                                <label for="mobile">Mobile Number *</label>
+                                <input type="tel" id="mobile" name="mobile" required placeholder="e.g. +91 94141 16315">
+                            </div>
+                            <div class="form-group-dark">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="e.g. Custom Commission Inquiry">
+                            </div>
+                            <div class="form-group-dark">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about the marble masterpiece you are looking for..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full-width">
+                                Send Message <i class="ri-send-plane-fill"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="professional-widgets">
+                    <!-- Owner Profile -->
+                    <div class="pro-widget">
+                        <img src="images/owner_profile.jpg" alt="Om Prakash" class="owner-img" id="ownerImg">
+                        <div class="pro-text">
+                            <span class="pro-title">Om Prakash</span>
+                            <span class="pro-desc">Founder</span>
+                        </div>
+                    </div>
+                    <!-- Contact Widgets -->
+                    <a href="tel:+919414116315" class="pro-widget action-widget phone-widget-light">
+                        <div class="pro-icon"><i class="ri-phone-fill"></i></div>
+                        <div class="pro-text">
+                            <span class="pro-title">Direct Line</span>
+                            <span class="pro-desc">+91 94141 16315</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/919414116315" class="pro-widget action-widget whatsapp-widget-light" target="_blank">
+                        <div class="pro-icon"><i class="ri-whatsapp-fill"></i></div>
+                        <div class="pro-text">
+                            <span class="pro-title">WhatsApp Chat</span>
+                            <span class="pro-desc">Instant Messaging</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="vertical-stats-section">
+                    <div class="vertical-stat-item">
+                        <h3 class="v-counter" data-target="100" data-suffix="%">0</h3>
+                        <p>Loading Precision</p>
+                        <div class="progress-track"><div class="progress-fill blue-line" data-progress="100"></div></div>
+                    </div>
+                    <div class="vertical-stat-item">
+                        <h3 class="v-counter" data-target="1200" data-suffix="+">0</h3>
+                        <p>Projects Delivered</p>
+                        <div class="progress-track"><div class="progress-fill blue-line" data-progress="100"></div></div>
+                    </div>
+                    <div class="vertical-stat-item">
+                        <h3 class="v-counter" data-target="50" data-suffix="+">0</h3>
+                        <p>Master Artisans</p>
+                        <div class="progress-track"><div class="progress-fill blue-line" data-progress="100"></div></div>
+                    </div>
+                    <div class="vertical-stat-item">
+                        <h3 class="v-counter" data-target="30" data-suffix="+">0</h3>
+                        <p>Years of Legacy</p>
+                        <div class="progress-track"><div class="progress-fill blue-line" data-progress="100"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <h1>Shri Rana Marble<br><span>& Handicrafts</span></h1>
+                </div>
+                <p class="footer-desc">Crafting monumental elegance and timeless luxury. We bring the finest Makrana and Vietnam marble masterpieces from our workshop directly to your projects.</p>
+                
+                <div class="pro-widget-nav" style="display: flex; align-items: center; gap: 12px; margin-top: 25px;">
+                    <img src="images/owner_profile.jpg" alt="Om Prakash" class="owner-img" style="width: 45px; height: 45px; border: 2px solid var(--primary-color); border-radius: 50%; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;">
+                    <div class="pro-text" style="display: flex; flex-direction: column;">
+                        <span class="pro-title" style="font-size: 14px; font-weight: 600; color: #fff; font-family: 'Cinzel', serif; line-height: 1;">Om Prakash</span>
+                        <span class="pro-desc" style="font-size: 11px; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">Founder</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="ri-map-pin-line"></i> Shri Rana Marble and Handicrafts, near Head Post Office, Manglana Road, Makrana (341505) Rajasthan</li>
+                    <li><i class="ri-phone-line"></i> +91 94141 16315</li>
+                    <li><i class="ri-mail-line"></i> shriranamarblehandicraft@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-business-hours">
+                <h4>Business Hours</h4>
+                <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shri Shri Rana Marble Handicrafts Handicrafts. All Rights Reserved. Crafted with Luxury.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
