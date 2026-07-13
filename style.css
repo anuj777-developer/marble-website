@@ -633,3 +633,69 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 400; }
     transform: translateY(-3px);
 }
 
+/* =========================================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS (Overriding Previous Rules)
+   ========================================================================= */
+
+@media (max-width: 1024px) {
+    /* Hide the pro widget in the navbar on smaller screens to avoid overlap */
+    .navbar .pro-widget-nav { display: none !important; }
+}
+
+@media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .section { padding: 60px 0; }
+    
+    .hero-title { font-size: 36px; }
+    .hero-description { font-size: 16px; margin-bottom: 30px; }
+    
+    .section-title { font-size: 32px; }
+    
+    .collection-img, .featured-img { height: 300px; }
+    
+    /* Contact page widgets */
+    .professional-widgets { grid-template-columns: 1fr; }
+    .vertical-stats-section { grid-template-columns: 1fr; }
+    
+    /* Footer */
+    .footer { padding: 60px 0 0; }
+    .footer-container { gap: 30px; margin-bottom: 40px; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 15px; }
+    .section { padding: 50px 0; }
+    
+    .logo h1 { font-size: 20px; }
+    .logo span { font-size: 10px; letter-spacing: 2px; }
+    
+    .hero-title { font-size: 28px; }
+    .hero-subtitle { font-size: 12px; letter-spacing: 3px; }
+    .hero-description { font-size: 14px; margin-bottom: 25px; }
+    .hero-buttons { flex-direction: column; gap: 15px; width: 100%; padding: 0 20px; box-sizing: border-box; }
+    .hero-buttons .btn { width: 100%; box-sizing: border-box; }
+    
+    .section-title { font-size: 28px; }
+    .section-subtitle { font-size: 12px; letter-spacing: 2px; }
+    
+    .collection-img, .featured-img { height: 250px; }
+    
+    .stat-number { font-size: 36px; }
+    .stat-label { font-size: 12px; }
+    
+    .product-image-container { height: 300px !important; }
+    
+    /* Feature Item Paddings */
+    .feature-item { padding: 20px 10px; }
+    
+    /* Footer Tweaks */
+    .footer-links a, .footer-contact li { font-size: 13px; }
+    .footer-contact li { word-break: break-word; } /* Prevent email/address overflow */
+}
+
+/* Nav Links Mobile Overflow Fix */
+.nav-links {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
