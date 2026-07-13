@@ -639,6 +639,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 400; }
    COMPREHENSIVE MOBILE RESPONSIVENESS (Overriding Previous Rules)
    ========================================================================= */
 
+/* Center align shop categories */
+.category-section { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
 @media (max-width: 1024px) {
     /* Hide the pro widget in the navbar on smaller screens to avoid overlap */
     .navbar .pro-widget-nav { display: none !important; }
