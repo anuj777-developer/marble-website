@@ -700,9 +700,11 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 400; }
     .footer-contact li { word-break: break-word; } /* Prevent email/address overflow */
 }
 
-/* Nav Links Mobile Overflow Fix */
-.nav-links {
-    max-height: 80vh;
-    overflow-y: auto;
+@media (max-width: 1024px) {
+    /* Nav Links Mobile Overflow Fix */
+    .nav-links {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
 }
 
